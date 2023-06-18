@@ -440,14 +440,17 @@ span {
     }
     .navbar {
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
+        top: 105%;
+        left: 32rem;
+        width: 33%;
+        
+        text-align: center;
         padding: 1rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0,0,0.2);
-        box-shadow: 0 .5rem 1rem rgba(0,0,0.2);
+        box-shadow: 0 0 .4rem  var(--main-color);
         display: none;
+        border-radius: 1rem;
     }
     .navbar.active {
         display: block;
