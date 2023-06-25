@@ -6,6 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
+    font-family: sans-serf;
 }
 
 :root {
@@ -437,13 +438,14 @@ span {
 @media (max-width: 768px){
     #menu-icon {
         display: block;
+        
     }
     .navbar {
         position: absolute;
         top: 105%;
-        left: 32rem;
+        left: 66%;
         width: 33%;
-        
+        display: flex;
         text-align: center;
         padding: 1rem 3%;
         background: var(--bg-color);
@@ -451,9 +453,12 @@ span {
         box-shadow: 0 0 .4rem  var(--main-color);
         display: none;
         border-radius: 1rem;
+        
     }
+
     .navbar.active {
         display: block;
+        
     }
     .navbar a  {
         display: block;
