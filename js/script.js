@@ -34,20 +34,20 @@ window.onscroll = () => {
 };
 
 // scroll reveal
-ScrollReveal({
-    // reset: true,
-    distance: '80px',
-    duration: 800,
-    delay: 200
-});
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .heading h2', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1,.about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p,.about-content', { origin: 'right' });
+// ScrollReveal({
+//     // reset: true,
+//     distance: '80px',
+//     duration: 800,
+//     delay: 200
+// });
+// ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+// ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .heading h2', { origin: 'bottom' });
+// ScrollReveal().reveal('.home-content h1,.about-img', { origin: 'left' });
+// ScrollReveal().reveal('.home-content p,.about-content', { origin: 'right' });
 // typed js
 
 const typed = new Typed ('.multiple-text',{
-    strings: ['Web Developer', 'Mini Youtuber', 'Coder'],
+    strings: ['Web Developer', 'Youtuber', 'Coder'],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
