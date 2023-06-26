@@ -51,24 +51,13 @@ section {
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 2.7em;
     color: var(--text-color);
     font-weight: 600;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-    align-items: center;
-    margin-right: 20px;
     
 }
 
- .logo img {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-
-}
 
 .navbar a {
     font-size: 1.7em;
@@ -552,7 +541,9 @@ span {
 @media (max-width: 415px){
  
     .home-img img {
-        width: 72vw;
+        width: 70vw;
+        position: relative;
+        top: -3rem;
     }
     .about-img img {
         width: 72vw;
