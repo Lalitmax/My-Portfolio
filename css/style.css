@@ -323,7 +323,7 @@ span {
 }
 
 .project h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .project-container {
@@ -331,77 +331,85 @@ span {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
+    justify-content: center;
+    margin-bottom: 7rem;
 }
 
-.project-container .project-box {
-    position: relative;
+.project-box {
+    flex: 1 1 10rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
     border-radius: 2rem;
-    box-shadow: 0 0 2rem var(--bg-color);
-
-    overflow: hidden;
-    display: flex;
-}
-
-.project-box img {
-    height: 200px;
-    width: 100%;
-    transition: .5s ease;
-}
-
-.project-box:hover img {
-    transform: scale(1.1);
-}
-
-.project-box .project-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(21, 21, 23, 0.1), var(--bg-color));
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
-}
-
-.project-box:hover .project-layer {
-    transform: translateY(0);
+    transition: .1s ease-out;
+    box-shadow: 0 0 0.5rem var(--main-color);
+    background-color: var(--second-bg-color);
 
 }
-
-.project-layer h4 {
-    font-size: 3rem;
-
+.project-box:hover {
+    border: 2px solid rgb(244, 246, 251);
+    border-color: var(--main-color);
+    transform: scale(1.01);
 }
 
-.project-layer p {
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
-    font-weight: 700;
-}
-
-.project-layer a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
-}
-
-.project-layer a i {
-
+.project-box .project-title {
+    height: 50px;
+    width: 270px;
     font-size: 2rem;
-    color: var(--second-bg-color)
+    font-weight: bold;
+    box-shadow: 0 0 0.5rem var(--main-color);
+    margin-left:1.7rem ;
+    border-radius: 11px;
+    color: var(--main-color);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+.project-box .project-img  {
+    margin-bottom: 3rem;
+    box-shadow: 0 0 0.5rem var(--main-color);
+    /* background-image: url('/Images/project1.png');
+    background-size: cover; */
+    height: 220px;
+    width: 302px;
+    border-radius: 1.5rem;
+    
 }
 
+.project-box .project-code-site {
+    display: flex;
+    height: 50px;
+    width: 270px;
+    justify-content: space-between;
+    margin-left:2rem ;
+    
+}
+.project-box .project-code-site div  button {
+
+    height: 50px;
+    width: 120px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 1rem;
+    border: 0.1rem solid rgb(8, 33, 61);
+    box-shadow: 0 0 0.2rem var(--main-color);
+    transition: 0.3s ease-out;
+}
+.project-box .project-code-site div  button:hover {
+    box-shadow: 0 0 0.7rem white;
+    border-color: var(--second-bg-color);
+    transform: scale(1.05);
+}
+
+.project-code-site button i {
+    font-size: 2.5rem;
+}
 
 .services h2 {
     margin-bottom: 5rem;
@@ -561,7 +569,7 @@ span {
    
 }
 
-@media (max-width: 768px){
+@media (max-width: 769px){
     #menu-icon {
         display: block;
         
@@ -616,6 +624,7 @@ span {
     .project-container {
         grid-template-columns: repeat(2,1fr);
     }
+    
 }
 
 @media (max-width:617px) {
@@ -626,6 +635,7 @@ span {
     .about-img img {
         display: none;
     }
+    
 }
 
 @media (max-width: 458px){
@@ -716,6 +726,7 @@ span {
         width: 17rem;
        
     }
+    
 }
 
 @media (max-width: 437px){
@@ -792,5 +803,13 @@ span {
         width: 17rem;
        
     }
-    
+    .project-box .project-title {
+        margin-left: 4.5rem;
+    }
+    .project-box .project-img {
+        margin-left: 2.1rem;
+    }
+    .project-box .project-code-site {
+        margin-left: 4.1rem;
+    }
 }
