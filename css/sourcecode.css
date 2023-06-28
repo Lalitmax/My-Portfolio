@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.xmp-tag {
+    height: 500px;
+    margin-left: 23rem;
+    width: 500px;
+    text-align: left;
+    font-size: small;
+    border: 2px solid rgb(13, 159, 203);
+    background-color: rgb(67, 58, 58);
+    color: white;
+    font-weight: bold;
+}
