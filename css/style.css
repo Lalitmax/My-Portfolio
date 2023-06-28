@@ -690,6 +690,32 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+    .edu-content-2 ul li {
+    
+        font-size: 2.2rem;
+        line-height: 4rem;
+        
+    }
+    .edu-content-1 ul li {
+        
+        font-size: 2.2rem;
+        line-height: 3rem;
+        
+    }
+    .edu-content-3 ul li {
+        
+        font-size: 2.2rem;
+        line-height: 4rem;
+        
+    }
+    .skills .sk {
+        font-size: 2.5rem;
+        
+        height: 5rem;
+     
+        width: 17rem;
+       
+    }
 }
 
 @media (max-width: 437px){
@@ -739,24 +765,32 @@ span {
     }
     .edu-content-2 ul li {
     
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         line-height: 4rem;
         
     }
     .edu-content-1 ul li {
         
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         line-height: 3rem;
         
     }
     .edu-content-3 ul li {
         
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         line-height: 4rem;
         
     }
     .skills {
         font-size: 2.5rem;
+    }
+    .skills .sk {
+        font-size: 2.5rem;
+        
+        height: 5rem;
+     
+        width: 17rem;
+       
     }
     
 }
