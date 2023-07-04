@@ -87,7 +87,7 @@ section {
 
 .home-img img {
     width: 32vw;
-    border-radius: 50%;
+    border-radius:50%;
     animation: floatImage 5s ease-in-out infinite;
 }
 @keyframes floatImage {
@@ -606,6 +606,7 @@ span {
     .home-content h1 {
         font-size: 5rem;
     }
+   
     .home-img img {
         width: 70wv;
         margin-top: 4rem;
